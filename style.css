@@ -1,0 +1,41 @@
+/* Stile generale per il corpo della pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+/* Stile per il contenitore principale */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Effetto hover per le card */
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Stile per il titolo del prodotto */
+.product-card h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+/* Stile per i paragrafi nella card */
+.product-card p {
+    margin: 8px 0;
+    color: #555;
+}
+

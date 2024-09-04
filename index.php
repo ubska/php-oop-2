@@ -13,11 +13,12 @@ require_once __DIR__ . '/Data/db.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Prodotti per Animali</h1>
+
 
     <?php foreach ($products as $product): ?>
         <div class="product-card">
