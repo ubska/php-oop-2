@@ -8,5 +8,6 @@ $products = [
 
     new Food("Cibo per Cani", 19.99, "Dog", "2025-12-31"),
     new Food("Cibo per Gatti", 15.99,  "Cat", "2024-06-30"),
+    new Toy("Pallina per Cani", 5.99, "Dog", "Rubber"),
 
 ];
