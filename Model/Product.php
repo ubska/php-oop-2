@@ -1,9 +1,6 @@
 <?php
 
-// classe del prodotto
-
-use function PHPSTORM_META\type;
-
+// Classe base Product
 class Product
 {
     public $title;
@@ -11,13 +8,11 @@ class Product
     public $category;
     public $type;
 
-
-    // costruttore della classe product
-    public function __construct($_title, $_price, $_category, $_type)
+    public function __construct($title, $price, $category, $type)
     {
-        $this->title = $_title;
-        $this->price = $_price;
-        $this->category = $_category;
-        $this->type = $_type();
+        $this->title = $title;
+        $this->price = $price;
+        $this->category = $category;
+        $this->type = $type;
     }
 }

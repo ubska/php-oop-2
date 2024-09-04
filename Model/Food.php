@@ -9,7 +9,7 @@ class Food extends Product
 
     public function __construct($title, $price, $category, $expirationDate)
     {
-        parent::__construct($title, $price, $category);
+        parent::__construct($title, $price, $category, "Food");
         $this->expirationDate = $expirationDate;
     }
 }
