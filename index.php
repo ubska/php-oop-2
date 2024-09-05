@@ -24,7 +24,7 @@ require_once __DIR__ . '/Data/db.php';
         <div class="product-card">
             <h2><?php echo $product->title; ?></h2>
             <p>Prezzo: €<?php echo number_format($product->price, 2); ?></p>
-            <p>Categoria: <?php echo $product->category; ?></p>
+            <p>Categoria: <?php echo $product->getCategory(); ?></p>
             <p>Tipo: <?php echo $product->type; ?></p>
             <p>Data di scadenza: <?php echo $product->expirationDate; ?></p>
         </div>

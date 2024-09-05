@@ -5,7 +5,7 @@ class Product
 {
     public $title;
     public $price;
-    public $category;
+    private $category;
     public $type;
 
     public function __construct($title, $price, $category, $type)
@@ -28,5 +28,20 @@ class Product
             // Se il prezzo è negativo o zero, lanciamo un errore
             throw new Exception("Errore: Il prezzo deve essere positivo.");
         }
+    }
+
+    // Getter per category
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    // Setter per category
+    public function setCategory($category)
+    {
+        if (empty($category)) {
+            throw new Exception("Errore: La categoria non può essere vuota.");
+        }
+        $this->category = $category;
     }
 }
